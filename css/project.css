@@ -1,48 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #F7F9FD;
+    --text: #000;
+    --bg_rgb: 247, 259, 253;
+    --text_rgb: 0, 0, 0;
+}
+
 body {
-    background: #020310;
-    padding-top: 60px;
+    background: var(--bg);
+    padding-top: 80px;
+    min-height: 100vh;
 }
 
 a {
     text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+p {
+    color: var(--text);
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    font-style: normal;
+    line-height: 1.6;
+}
+
+hr {
+    margin-top: 5px;
+    border: none;
+    height: 1px;
+    background-color: rgba(var(--text_rgb), 0.6);
 }
 
 .nav_main {
     position: fixed;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-
-    background: #020310;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: var(--bg);
     box-shadow: 0 4px 50px 0 rgba(255, 242, 242, 0.05);
-
     display: flex;
-    width: 100%;
-    max-width: 1920px;
-    padding: 10px;
     justify-content: center;
     align-items: center;
-    gap: 300px;
+    gap: clamp(30px, 15vw, 300px);
+    padding: 20px;
+    width: 100%;
 }
 
 .nav_main a {
-    color: #bfebff;
-    font-family: Pretendard;
-    font-size: 24px;
-    font-style: normal;
+    color: var(--text);
+    font-family: Pretendard, sans-serif;
+    font-size: clamp(12px, 2vw, 20px);
     font-weight: 400;
-    line-height: normal;
+    white-space: nowrap;
 }
 
 .nav_main a.active {
-    font-size: 24px;
     font-weight: 700;
+}
+
+.nav_main a:hover {
+    opacity: 0.7;
 }
 
 .img {
     width: 100%;
-    height: 1080px;
-    margin: 0 auto;
+    max-width: 1920px;
     height: auto;
     display: block;
+    margin: 0 auto;
+}
+
+.name {
+    font-size: clamp(28px, 4vw, 36px);
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.title {
+    font-size: clamp(20px, 3vw, 24px);
+    font-weight: 600;
+}
+
+.text {
+    margin: 0 0;
+    font-size: clamp(14px, 1.5vw, 16px);
+    font-weight: 400;
+}
+
+.text_s {
+    margin: 0 0;
+    font-size: clamp(6px, 1vw, 10px);
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.text_sub {
+    font-size: clamp(5px, 1vw, 10px);
+    text-align: right;
+    color: rgba(var(--text_rgb), 0.6);
+}
+
+.box {
+    margin: 60px auto;
+    margin-bottom: 100px;
+    padding: 0 100px;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.award {
+    margin: 60px auto;
+    margin-bottom: 100px;
+    padding: 0 100px;
+    max-width: 1000px;
+}
+
+.award_item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.award_item_p {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.award_text {
+    flex: 1;
+}
+
+.namo1 {
+    width: 104px;
+    height: 137px;
+    border: 2px solid #BFEBFF;
+    flex-shrink: 0;
+}
+
+.namo2 {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #BFEBFF;
+    flex-shrink: 0;
+}
+
+.icon {
+    width: 28px;
+    height: 28px;
+    color: var(--text);
+    fill: currentColor;
+}
+
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #020310;
+        --bg_rgb: 2, 3, 16;
+        --text: #BFEBFF;
+        --text_rgb: 191, 235, 255;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 70px;
+    }
+
+    .nav_main {
+        gap: 20px;
+        padding: 15px 10px;
+    }
+
+    .box {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 40px auto;
+        padding: 0 15px;
+        flex-direction: row;
+    }
+
+    .award {
+        margin: 40px auto;
+        padding: 0 15px;
+    }
+
+    .award_item {
+        flex-direction: column;
+    }
+
+    .award_item_p {
+        min-width: 100%;
+    }
+
+    .namo1 {
+        width: 90px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding-top: 60px;
+    }
+
+    .nav_main {
+        gap: 15px;
+        padding: 12px 8px;
+    }
+
+    .box {
+        margin: 30px auto;
+        padding: 0 12px;
+        gap: 20px;
+        flex-direction: row;
+    }
+
+    .award {
+        margin: 30px auto;
+        padding: 0 12px;
+    }
+
+    .namo1 {
+        width: 80px;
+        height: 106px;
+    }
+
+    .namo2 {
+        width: 35px;
+        height: 35px;
+    }
 }
