@@ -4,8 +4,14 @@
     box-sizing: border-box;
 }
 
+:root { 
+  --bg: #fff;
+  --text: black;
+}
+
+
 body {
-    background: #020310;
+    background: var(--bg);
     padding-top: 80px;
     min-height: 100vh;
 }
@@ -16,7 +22,7 @@ a {
 }
 
 p {
-    color: #BFEBFF;
+    color: var(--text);
     font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
     font-style: normal;
     line-height: 1.6;
@@ -28,7 +34,7 @@ p {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: #020310;
+    background: var(--bg);
     box-shadow: 0 4px 50px 0 rgba(255, 242, 242, 0.05);
     display: flex;
     justify-content: center;
@@ -39,7 +45,7 @@ p {
 }
 
 .nav_main a {
-    color: #bfebff;
+    color: var(--text);
     font-family: Pretendard, sans-serif;
     font-size: clamp(16px, 2vw, 24px);
     font-weight: 400;
@@ -133,6 +139,13 @@ p {
     height: 40px;
     border: 1px solid white;
     flex-shrink: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #020310;
+    --text: #BFEBFF;
+  }
 }
 
 @media (max-width: 768px) {
