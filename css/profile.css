@@ -28,6 +28,13 @@ p {
     line-height: 1.6;
 }
 
+hr {
+    margin-top: 20px;
+    border: none;
+    height: 1px;
+    background-color: var(--text);
+}
+
 .nav_main {
     position: fixed;
     top: 0;
@@ -47,7 +54,7 @@ p {
 .nav_main a {
     color: var(--text);
     font-family: Pretendard, sans-serif;
-    font-size: clamp(16px, 2vw, 24px);
+    font-size: clamp(12px, 2vw, 20px);
     font-weight: 400;
     white-space: nowrap;
 }
@@ -77,7 +84,6 @@ p {
 .title {
     font-size: clamp(20px, 3vw, 24px);
     font-weight: 600;
-    margin-bottom: 20px;
 }
 
 .text {
@@ -95,6 +101,7 @@ p {
 
 .box {
     margin: 60px auto;
+    margin-bottom: 100px;
     padding: 0 100px;
     max-width: 1000px;
     display: flex;
@@ -104,6 +111,7 @@ p {
 
 .award {
     margin: 60px auto;
+    margin-bottom: 100px;
     padding: 0 100px;
     max-width: 1000px;
 }
@@ -163,6 +171,7 @@ p {
         align-items: flex-start;
         margin: 40px auto;
         padding: 0 15px;
+        flex-direction: row;
     }
 
     .award {
@@ -198,6 +207,7 @@ p {
         margin: 30px auto;
         padding: 0 12px;
         gap: 20px;
+        flex-direction: row;
     }
 
     .award {
