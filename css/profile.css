@@ -22,7 +22,6 @@ p {
     line-height: 1.6;
 }
 
-/* 네비게이션 */
 .nav_main {
     position: fixed;
     top: 0;
@@ -34,7 +33,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: clamp(30px, 10vw, 300px);
+    gap: clamp(30px, 15vw, 300px);
     padding: 20px;
     width: 100%;
 }
@@ -76,13 +75,13 @@ p {
 }
 
 .text {
-    margin: 3px 0;
+    margin: 0 0;
     font-size: clamp(14px, 1.5vw, 16px);
     font-weight: 400;
 }
 
 .text_s {
-    margin: 6px 0;
+    margin: 0 0;
     font-size: clamp(9px, 1vw, 10px);
     font-weight: 400;
     opacity: 0.8;
@@ -90,8 +89,8 @@ p {
 
 .box {
     margin: 60px auto;
-    padding: 0 20px;
-    max-width: 1200px;
+    padding: 0 100px;
+    max-width: 1000px;
     display: flex;
     align-items: center;
     gap: 25px;
@@ -99,8 +98,8 @@ p {
 
 .award {
     margin: 60px auto;
-    padding: 0 20px;
-    max-width: 1200px;
+    padding: 0 100px;
+    max-width: 1000px;
 }
 
 .award_item {
