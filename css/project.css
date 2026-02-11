@@ -3,6 +3,10 @@ body {
     padding-top: 60px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .nav_main {
     position: fixed;
     top: 0;
@@ -21,7 +25,6 @@ body {
     gap: 300px;
 }
 
-
 .nav_main a {
     color: #bfebff;
     font-family: Pretendard;
@@ -34,4 +37,12 @@ body {
 .nav_main a.active {
     font-size: 24px;
     font-weight: 700;
+}
+
+.img {
+    width: 100%;
+    height: 1080px;
+    margin: 0 auto;
+    height: auto;
+    display: block;
 }

@@ -3,6 +3,17 @@ body {
     padding-top: 60px;
 }
 
+a {
+    text-decoration: none;
+}
+
+p {
+    color: #BFEBFF;
+    font-family: Pretendard;
+    font-style: normal;
+    line-height: normal;
+}
+
 .nav_main {
     position: fixed;
     top: 0;
@@ -21,7 +32,6 @@ body {
     gap: 300px;
 }
 
-
 .nav_main a {
     color: #bfebff;
     font-family: Pretendard;
@@ -34,4 +44,37 @@ body {
 .nav_main a.active {
     font-size: 24px;
     font-weight: 700;
+}
+
+.img {
+    width: 100%;
+    height: 1080px;
+    margin: 0 auto;
+    height: auto;
+    display: block;
+}
+
+.name {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.text {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.box {
+    margin: 300px;
+    display: flex;
+    align-items: center; 
+    gap: 25px;       
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.namo {
+    width: 104px;
+    height: 137px;
+    border: 2px solid white; 
 }
