@@ -29,10 +29,10 @@ p {
 }
 
 hr {
-    margin-top: 20px;
+    margin-top: 5px;
     border: none;
     height: 1px;
-    background-color: var(--text);
+    background-color: rgba(var(--text_rgb), 0.6);
 }
 
 .nav_main {
@@ -94,9 +94,15 @@ hr {
 
 .text_s {
     margin: 0 0;
-    font-size: clamp(9px, 1vw, 10px);
+    font-size: clamp(6px, 1vw, 10px);
     font-weight: 400;
     opacity: 0.8;
+}
+
+.text_sub {
+    font-size: clamp(5px, 1vw, 10px);
+    text-align: right;  
+    color: rgba(var(--text_rgb), 0.6);
 }
 
 .box {
@@ -138,21 +144,23 @@ hr {
 .namo1 {
     width: 104px;
     height: 137px;
-    border: 2px solid white;
+    border: 2px solid #BFEBFF;
     flex-shrink: 0;
 }
 
 .namo2 {
     width: 40px;
     height: 40px;
-    border: 1px solid white;
+    border: 1px solid #BFEBFF;
     flex-shrink: 0;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #020310;
+    --bg_rgb: 2, 3, 16; 
     --text: #BFEBFF;
+    --text_rgb: 191, 235, 255;
   }
 }
 
