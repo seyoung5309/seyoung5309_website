@@ -93,7 +93,7 @@ hr {
     font-weight: 400;
 }
 
-.text_s {
+.text_small {
     margin: 0 0;
     font-size: clamp(6px, 1vw, 10px);
     font-weight: 400;
