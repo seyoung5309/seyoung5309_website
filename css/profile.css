@@ -59,13 +59,25 @@ p {
     font-weight: 600;
 }
 
+.title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
 .text {
+    margin: 3px 0;
     font-size: 16px;
     font-weight: 400;
 }
 
+.text_s {
+    margin: 6px 0;
+    font-size: 10px;
+    font-weight: 400;
+}
+
 .box {
-    margin: 300px;
+    margin: 100px 300px;
     display: flex;
     align-items: center; 
     gap: 25px;       
@@ -73,8 +85,34 @@ p {
     align-items: center; */
 }
 
-.namo {
+.award {
+    margin: 100px 300px;
+    align-items: center; 
+    gap: 25px;   
+}
+
+.award_item {
+    display: flex;
+}
+
+.award_item_p {
+    display: flex;
+    margin-right: 200px;
+}
+
+.award_text {
+    margin: 0 10px;
+    flex-direction: row; 
+}
+
+.namo1 {
     width: 104px;
     height: 137px;
     border: 2px solid white; 
+}
+
+.namo2 {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
 }
