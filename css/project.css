@@ -160,6 +160,15 @@ hr {
     }
 }
 
+@media (max-width: 916px) {
+    .prj_s {
+        justify-content: center;
+        gap: 30px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
 @media (max-width: 768px) {
     body {
         padding-top: 70px;
