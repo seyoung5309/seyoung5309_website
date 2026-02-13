@@ -75,12 +75,23 @@ hr {
     appearance: none;
 }
 
+.text_tag {
+    font-size: clamp(12px, 1vw, 18px);
+    background-color: var(--bg);
+    color: var(--text);
+    appearance: none;
+}
+
 .tag {
     margin: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
+}
+
+.text_tag:hover {
+    cursor: pointer;
 }
 
 .prjs {
@@ -102,6 +113,10 @@ hr {
     margin-top: 50px;
     margin-left: 25px;
     margin-right: 25px;
+}
+
+.prj:hover {
+    cursor: pointer;
 }
 
 .img {
