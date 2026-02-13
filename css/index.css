@@ -110,7 +110,7 @@ hr {
 .box {
     margin: 60px auto;
     margin-bottom: 100px;
-    padding: 0 100px;
+    padding: 0 clamp(16px, 8vw, 100px);
     max-width: 1000px;
     display: flex;
     align-items: center;
@@ -120,7 +120,7 @@ hr {
 .award {
     margin: 60px auto;
     margin-bottom: 100px;
-    padding: 0 100px;
+    padding: 0 clamp(16px, 8vw, 100px);
     max-width: 1000px;
 }
 
@@ -166,8 +166,9 @@ hr {
 
 
 .carousel {
-    height: 120px;
-    width: 600px;
+    height: auto;            
+    width: 100%;               
+    max-width: 600px;           
     display: flex;        
     justify-content: center;
     align-items: center;     
@@ -181,8 +182,8 @@ hr {
 }
 
 .slide {
-    height: 100px;
-    width: 200px;
+    height:clamp(40px, 15vw, 100px);
+    width: clamp(80px, 30vw, 200px);  
     border: 1px solid var(--text);
 }
 
