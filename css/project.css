@@ -72,31 +72,37 @@ hr {
     font-size: clamp(12px, 1vw, 18px);
     background-color: var(--bg);
     color: var(--text);
-    appearance: none;   
+    appearance: none;
 }
 
 .tag {
     margin: 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 
 .prjs {
     margin: 0 auto;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     max-width: 900px;
+    align-items: center;
 }
 
 .prj_s {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    gap: 50px;
+    /* gap: 50px; */
     flex-wrap: wrap;
 }
 
-.prj { }
+.prj {
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
 
 .img {
     margin-bottom: 5px;
