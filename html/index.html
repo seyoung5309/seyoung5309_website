@@ -18,7 +18,7 @@
 
   <p class="title">기술 스택</p>
   <div class="carousel">
-    <div class="slides">
+    <div class="slides" id="slides">
       <div class="slide">
         <div class="award_item_p">
           <p>C/C++</p>
@@ -137,6 +137,47 @@
       <p class="text">seyoung5309</p>
     </div>
   </div>
+
+  <script>
+    const slides = document.querySelector("#slides");
+    let slideItems = Array.from(document.querySelectorAll("#slides .slide"));
+
+    const slideWidth = slideItems[0].offsetWidth + 50;
+
+    for (let i = 0; i < slideItems.length; i++) {
+      const clone = slideItems[i].cloneNode(true);
+      slides.appendChild(clone);
+    }
+
+    let index = 0;
+    let currentPosition = 0;
+    let accumulatedMove = 0;
+
+    const moveSpeed = 1;
+
+    setInterval(() => {
+      accumulatedMove += moveSpeed;
+      currentPosition -= moveSpeed;
+
+      slides.style.transition = "none";
+      slides.style.transform = `translateX(${currentPosition}px)`;
+
+      if (accumulatedMove >= slideWidth) {
+        slides.removeChild(slides.firstElementChild);
+
+        index++;
+        const nextSlideIndex = index % slideItems.length;
+        const clone = slideItems[nextSlideIndex].cloneNode(true);
+        slides.appendChild(clone);
+
+        currentPosition += slideWidth;
+        slides.style.transform = `translateX(${currentPosition}px)`;
+
+        accumulatedMove = 0;
+      }
+
+    }, 16);
+  </script>
 </body>
 
 </html>

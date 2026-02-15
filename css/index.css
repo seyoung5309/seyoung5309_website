@@ -168,7 +168,7 @@ hr {
 .carousel {
     height: auto;            
     width: 100%;               
-    max-width: 600px;           
+    max-width: clamp(300px, 70vw, 1000px);           
     display: flex;        
     justify-content: center;
     align-items: center;     
@@ -179,6 +179,7 @@ hr {
 .slides {
     display: flex;
     transition: transform 0.5s ease;
+    gap: 50px;
 }
 
 .slide {
