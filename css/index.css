@@ -186,6 +186,9 @@ hr {
     height:clamp(40px, 15vw, 100px);
     width: clamp(80px, 30vw, 200px);  
     border: 1px solid var(--text);
+    background-color: rgba(31, 69, 195, 0.2); 
+    border-radius: 18px;
+    padding: 10px;
 }
 
 @media (prefers-color-scheme: dark) {
