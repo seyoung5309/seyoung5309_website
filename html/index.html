@@ -17,8 +17,9 @@
   <img class="img" src="../img/image.png" alt="자기소개 이미지" />
 
   <p class="title">기술 스택</p>
+  <br>
   <div class="carousel">
-    <div class="slides" id="slides">
+    <div class="slides" id="slides1">
       <div class="slide">
         <div class="award_item_p">
           <p>C/C++</p>
@@ -73,6 +74,11 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <br>
+  <div class="carousel">
+    <div class="slides" id="slides2">
       <div class="slide">
         <div class="award_item_p">
           <div class="award_text">
@@ -139,44 +145,58 @@
   </div>
 
   <script>
-    const slides = document.querySelector("#slides");
-    let slideItems = Array.from(document.querySelectorAll("#slides .slide"));
+    function initCarousel(containerSelector, direction = 'left') {
+      const slides = document.querySelector(containerSelector);
+      if (!slides) return;
 
-    const slideWidth = slideItems[0].offsetWidth + 50;
+      let slideItems = Array.from(slides.querySelectorAll(".slide"));
 
-    for (let i = 0; i < slideItems.length; i++) {
-      const clone = slideItems[i].cloneNode(true);
-      slides.appendChild(clone);
-    }
+      const slideWidth = slideItems[0].offsetWidth + 50;
 
-    let index = 0;
-    let currentPosition = 0;
-    let accumulatedMove = 0;
-
-    const moveSpeed = 1;
-
-    setInterval(() => {
-      accumulatedMove += moveSpeed;
-      currentPosition -= moveSpeed;
-
-      slides.style.transition = "none";
-      slides.style.transform = `translateX(${currentPosition}px)`;
-
-      if (accumulatedMove >= slideWidth) {
-        slides.removeChild(slides.firstElementChild);
-
-        index++;
-        const nextSlideIndex = index % slideItems.length;
-        const clone = slideItems[nextSlideIndex].cloneNode(true);
+      for (let i = 0; i < slideItems.length; i++) {
+        const clone = slideItems[i].cloneNode(true);
         slides.appendChild(clone);
-
-        currentPosition += slideWidth;
-        slides.style.transform = `translateX(${currentPosition}px)`;
-
-        accumulatedMove = 0;
       }
 
-    }, 16);
+      let index = 0;
+      let currentPosition = 0;
+      let accumulatedMove = 0;
+
+      const moveSpeed = direction === 'left' ? 1 : -1;
+
+      setInterval(() => {
+        accumulatedMove += Math.abs(moveSpeed);
+        currentPosition -= moveSpeed;
+
+        slides.style.transition = "none";
+        slides.style.transform = `translateX(${currentPosition}px)`;
+
+        if (accumulatedMove >= slideWidth) {
+          if (direction === 'left') {
+            slides.removeChild(slides.firstElementChild);
+            index++;
+            const nextSlideIndex = index % slideItems.length;
+            const clone = slideItems[nextSlideIndex].cloneNode(true);
+            slides.appendChild(clone);
+            currentPosition += slideWidth;
+          } else {
+            slides.removeChild(slides.lastElementChild);
+            index--;
+            if (index < 0) index = slideItems.length - 1;
+            const clone = slideItems[index].cloneNode(true);
+            slides.insertBefore(clone, slides.firstElementChild);
+            currentPosition -= slideWidth;
+          }
+
+          slides.style.transform = `translateX(${currentPosition}px)`;
+          accumulatedMove = 0;
+        }
+
+      }, 16);
+    }
+
+    initCarousel("#slides1", 'left');
+    initCarousel("#slides2", 'right');
   </script>
 </body>
 
