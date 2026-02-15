@@ -191,6 +191,10 @@ hr {
     padding: 10px;
 }
 
+.img_icon {
+
+}
+
 @media (prefers-color-scheme: dark) {
     :root {
         --bg: #020310;
