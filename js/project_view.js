@@ -19,9 +19,8 @@ async function loadProject() {
 function render(post) {
   const box = document.getElementById('project_view');
   box.innerHTML = `
-    <h1>${post.title}</h1>
-    <p>${post.desc ?? ""}</p>
-    <div>${post.content}</div>
+    <p>${post.title}</p>
+    <p>${post.content}</p>
   `;
 }
 

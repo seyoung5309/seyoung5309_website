@@ -7,17 +7,6 @@
     --point_rgb: 31, 69, 195;
 }
 
-body {
-    background: var(--bg);
-    padding-top: 80px;
-    min-height: 100vh;
-}
-
-a {
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
 p {
     color: var(--text);
     font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;

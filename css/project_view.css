@@ -1,0 +1,27 @@
+:root {
+    --bg: #F7F9FD;
+    --text: #000;
+    --bg_rgb: 247, 249, 253;
+    --text_rgb: 0, 0, 0;
+    --point: #1F45C3;
+    --point_rgb: 31, 69, 195;
+}
+
+p {
+    color: var(--text);
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    font-style: normal;
+    line-height: 1.6;
+    font-size: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #020310;
+        --bg_rgb: 2, 3, 16;
+        --text: #BFEBFF;
+        --text_rgb: 191, 235, 255;
+        --point: #1F45C3;
+        --point_rgb: 31, 69, 195;
+    }
+}
