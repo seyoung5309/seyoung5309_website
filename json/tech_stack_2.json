@@ -1,0 +1,32 @@
+[
+  {
+    "name": "MySQL",
+    "category": "DataBase",
+    "img": "../img/mysql.png",
+    "alt": "MySQL 아이콘"
+  },
+  {
+    "name": "Supabase",
+    "category": "DataBase",
+    "img": "../img/supabase.png",
+    "alt": "Supabase 아이콘"
+  },
+    {
+    "name": "Linux",
+    "category": "Operating System",
+    "img": "../img/linux.png",
+    "alt": "Linux 아이콘"
+  },
+    {
+    "name": "GitHub",
+    "category": "Tool",
+    "img": "../img/github.png",
+    "alt": "GitHub 아이콘"
+  },
+    {
+    "name": "Figma",
+    "category": "Design",
+    "img": "../img/Figma.png",
+    "alt": "Figma 아이콘"
+  }
+]

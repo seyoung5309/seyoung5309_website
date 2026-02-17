@@ -1,3 +1,33 @@
+
+function createSlideHTML(item) {
+  return `
+    <div class="slide">
+      <div class="award_item_p">
+        <img class="img_icon" src="${item.img}" alt="${item.alt}" />
+        <div class="award_text">
+          <p class="text">${item.name}</p>
+          <p>${item.category}</p>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+async function loadSlides(containerId, jsonPath) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+
+  try {
+    const response = await fetch(jsonPath);
+    if (!response.ok) throw new Error(`JSON 로드 실패: ${jsonPath}`);
+    const items = await response.json();
+
+    container.innerHTML = items.map(createSlideHTML).join("");
+  } catch (error) {
+    console.error(error);
+  }
+}
+
 function initCarousel(containerSelector, direction = "left") {
   const slides = document.querySelector(containerSelector);
   if (!slides) return;
@@ -47,7 +77,11 @@ function initCarousel(containerSelector, direction = "left") {
   }, 16);
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+// JSON 로드 후 캐러셀 초기화
+document.addEventListener("DOMContentLoaded", async () => {
+  await loadSlides("slides1", "../json/tech_stack_1.json");
+  await loadSlides("slides2", "../json/tech_stack_2.json");
+
   initCarousel("#slides1", "left");
   initCarousel("#slides2", "right");
 });

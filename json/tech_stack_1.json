@@ -1,0 +1,44 @@
+[
+  {
+    "name": "C",
+    "category": "Language",
+    "img": "../img/c.png",
+    "alt": "C언어 아이콘"
+  },
+  {
+    "name": "C++",
+    "category": "Language",
+    "img": "../img/cpp.png",
+    "alt": "C++언어 아이콘"
+  },
+    {
+    "name": "Java",
+    "category": "Language",
+    "img": "../img/java.png",
+    "alt": "Java언어 아이콘"
+  },
+    {
+    "name": "Python",
+    "category": "Language",
+    "img": "../img/python.png",
+    "alt": "Python언어 아이콘"
+  },
+    {
+    "name": "Html",
+    "category": "Front",
+    "img": "../img/html.png",
+    "alt": "Html 아이콘"
+  },
+    {
+    "name": "CSS",
+    "category": "Front",
+    "img": "../img/css.png",
+    "alt": "CSS 아이콘"
+  },
+    {
+    "name": "JavaScript",
+    "category": "Front/Back",
+    "img": "../img/javascript.png",
+    "alt": "JavaScript 아이콘"
+  }
+]
