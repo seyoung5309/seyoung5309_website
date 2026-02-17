@@ -1,5 +1,4 @@
 [
-  "../2025/prj.json",
-  "../2025/post2.json",
-  "../2025/post3.json"
+  "./2025/prj.json",
+  "./2026/prj2.json"
 ]
