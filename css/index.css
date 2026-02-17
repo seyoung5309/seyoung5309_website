@@ -9,6 +9,8 @@
     --text: #000;
     --bg_rgb: 247, 249, 253;
     --text_rgb: 0, 0, 0;
+    --point: #1F45C3;
+    --point_rgb: 31, 69, 195;
 }
 
 body {
@@ -138,9 +140,11 @@ hr {
     gap: 10px;
     flex: 1;
     min-width: 250px;
+    height: clamp(20px, 15vw, 80px);
 }
 
 .award_text {
+    margin-top: 5px;
     flex: 1;
 }
 
@@ -155,7 +159,7 @@ hr {
 .carousel {
     height: auto;
     width: 100%;
-    max-width: clamp(300px, 70vw, 1000px);
+    max-width: clamp(300px, 70vw, 1200px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -175,7 +179,7 @@ hr {
     height: clamp(40px, 15vw, 100px);
     width: clamp(80px, 30vw, 200px);
     border: 1px solid var(--text);
-    background-color: rgba(31, 69, 195, 0.2);
+    background-color: rgba(var(--point_rgb), 0.2);
     border-radius: 18px;
     padding: 10px;
 }
@@ -183,6 +187,28 @@ hr {
 .img_icon {
     width: 70px;
     height: 70px;
+    align-self: center;
+}
+
+.prj_main_back {
+    width: 100%;
+    max-width: 1920px;
+    height: clamp(380px, 30vw, 950px);
+    padding: 30px;
+    /* padding: 75px; */
+    text-align: center;
+    background-color: rgba(var(--point_rgb), 0.2);
+}
+
+.prj_main {
+    width: 445px;
+    height: 250.5px;
+    margin-bottom: 20px;
+    border: 1px solid var(--text);
+    border-radius: 20px;
+    background-color: rgba(var(--point_rgb), 1);
+    justify-self: center;
+    align-self: center;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -191,6 +217,8 @@ hr {
         --bg_rgb: 2, 3, 16;
         --text: #BFEBFF;
         --text_rgb: 191, 235, 255;
+        --point: #1F45C3;
+        --point_rgb: 31, 69, 195;
     }
 }
 
@@ -224,11 +252,6 @@ hr {
     .award_item_p {
         min-width: 100%;
     }
-
-    .namo1 {
-        width: 90px;
-        height: 120px;
-    }
 }
 
 @media (max-width: 480px) {
@@ -251,15 +274,5 @@ hr {
     .award {
         margin: 30px auto;
         padding: 0 12px;
-    }
-
-    .namo1 {
-        width: 80px;
-        height: 106px;
-    }
-
-    .namo2 {
-        width: 35px;
-        height: 35px;
     }
 }
