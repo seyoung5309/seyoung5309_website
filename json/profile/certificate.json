@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "정보기술자격(ITQ) 아래한글",
+        "date": "2022-03-03"
+    },
+    {
+        "id": 2,
+        "name": "정보기술자격(ITQ) 한글엑셀",
+        "date": "2025-05-29"
+    },
+    {
+        "id": 3,
+        "name": "MOS - Excel Associate Microsoft 365 Apps",
+        "date": "2025-08-11"
+    },
+    {
+        "id": 4,
+        "name": "AICE BASIC",
+        "date": "2025-08-23"
+    }
+]
