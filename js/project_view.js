@@ -19,8 +19,11 @@ async function loadProject() {
 function render(post) {
   const box = document.getElementById('project_view');
   box.innerHTML = `
-    <p>${post.title}</p>
-    <p>${post.content}</p>
+    <div class="prj">
+      <p class="title">${post.title}</p>
+      <img src="${post.img} class="img">
+      <p class="ex">${post.content}</p>
+    </div>
   `;
 }
 

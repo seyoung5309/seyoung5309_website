@@ -3,5 +3,6 @@
   "title": "첫 글",
   "date": "2026-02-18",
   "category": "C/C++",
-  "content": "내용..."
+  "content": "내용...",
+  "img": "../img/post/name.png"
 }

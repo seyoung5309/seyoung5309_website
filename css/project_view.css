@@ -15,6 +15,35 @@ p {
     font-size: 10px;
 }
 
+.prj {
+    margin: 64px 347px 0 347px;
+}
+
+.title {
+    color: var(--text);
+
+    /* H1-bold */
+    font-family: Pretendard;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    /* 120% */
+    align-self: stretch;
+}
+
+.ex {
+    width: 1345px;
+    color: var(--text);
+
+    /* H3_tab */
+    font-family: Pretendard;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 @media (prefers-color-scheme: dark) {
     :root {
         --bg: #020310;
