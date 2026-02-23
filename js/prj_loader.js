@@ -11,7 +11,9 @@ async function loadPosts() {
     const el = document.createElement("article");
     el.innerHTML = `
       <div class="prj" tag-category="${post.category}">
-        <div class="img"></div>
+        <div class="img">
+          <img class="img" src="${post.img}">
+        </div>
         <p class="text">${post.title}</p>
       </div>
     `;
