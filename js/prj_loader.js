@@ -15,6 +15,7 @@ async function loadPosts() {
           <img class="img" src="${post.img}">
         </div>
         <p class="text">${post.title}</p>
+        <p class="date">${post.date}</p>
       </div>
     `;
 

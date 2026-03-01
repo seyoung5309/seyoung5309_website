@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "title": "8교시",
+  "date": "2025.8.11 ~ 2025.11.10",
+  "category": "JAVA",
+  "content": "Java, MySQL<br>개인 프로젝트",
+  "img": "../img/post/8th_period.png",
+  "code": "<h2 class='ex'>= 개요</h2><p class='ex'>2학기 자바 프로젝트<br>공포게임 8번 출구를 모티브로<br>우리 학교를 배경으로 만든 `8교시` 게임 </p><h2 class='ex'>= 주요 기능</h2><ul class='ex'><li>키 입력을 받아 캐릭터 조작</li><li>오브젝트와의 상호작용</li><li>클리어 시간을 계산하여 파일 처리로 저장 후, 랭킹 집계</li><li>음악과 효과음 삽입, 음량 조절</li><li>MySQL 데이터 베이스를 활용해 엔딩 수집</li></ul><h2 class='ex'>= 실행 화면</h2><img class='img_sub' src='../img/post/8th_period_run.png'><h2 class='ex'>= 주요 코드</h2><img class='img_sub' src='../img/post/8th_period_code_1.png'><p class='ex'>스테이지를 템플릿을 사용하는 것처럼 할 수 있게 하여 쉽고 간편하게 업데이트 가능한 점</p><img class='img_sub' src='../img/post/8th_period_code_2.png'><p class='ex'>패키지들을 사용하여 음악과 효과음 재생</p>"
+}

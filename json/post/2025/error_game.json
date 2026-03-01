@@ -3,6 +3,7 @@
   "title": "오류 피하기 게임",
   "date": "2025.8.12 ~ 2025.8.13",
   "category": "JAVA",
-  "content": "내용...",
-  "img": "../img/post/error_game.png"
+  "content": "Java<br>개인 프로젝트",
+  "img": "../img/post/error_game.png",
+  "code": "<h2 class='ex'>= 개요</h2><p class='ex'>2학기 자바 프로젝트 수행평가 전에 swing을<br>먼저 예습해 보기 위해 개발한 GUI 게임 프로젝트<br>60초 동안 많은 점수 획득하기</p><h2 class='ex'>= 주요 기능</h2><ul class='ex'><li>키 입력을 받아 캐릭터 조작</li><li>아이템 획득에 따른 점수 계산</li><li>파일 처리를 통한 최고 기록</li></ul><h2 class='ex'>= 실행 화면</h2><img class='img_sub' src='../img/post/error_game_run_1.png'><img class='img_sub' src='../img/post/error_game_run_2.png'><img class='img_sub' src='../img/post/error_game_run_3.png'><h2 class='ex'>= 주요 코드</h2><img class='img_sub' src='../img/post/error_game_code_1.png'><p class='ex'>게임에서의 시간과 시간의 흐름에 따른 아이템 드랍 속도 증가</p><img class='img_sub' src='../img/post/error_game_code_2.png'><p class='ex'>난수를 활용해 드랍 아이템 선정</p><br><a class='ex' target='_blank' href='https://velog.io/@seyoung5309/JAVA-java%EB%A1%9C-%EA%B0%84%EB%8B%A8%ED%95%9C-%EA%B2%8C%EC%9E%84-%EB%A7%8C%EB%93%A4%EA%B8%B0'>= 관련 Velog 바로가기</a>"
 }

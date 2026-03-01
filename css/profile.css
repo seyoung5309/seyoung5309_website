@@ -94,8 +94,9 @@ hr {
 }
 
 .namo1 {
-    width: 104px;
-    height: 137px;
+    width: auto;
+    height: 175px;
+    border-radius: 100%;
     border: 2px solid #BFEBFF;
     flex-shrink: 0;
 }
@@ -151,7 +152,6 @@ hr {
     }
 
     .namo1 {
-        width: 90px;
         height: 120px;
     }
 }
@@ -174,7 +174,6 @@ hr {
     }
 
     .namo1 {
-        width: 80px;
         height: 106px;
     }
 

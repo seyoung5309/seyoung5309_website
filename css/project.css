@@ -33,6 +33,11 @@ hr {
     appearance: none;
 }
 
+.date {
+    margin: 0;
+    font-size: clamp(8px, 1vw, 12px);
+}
+
 .tag {
     margin: 20px;
     display: flex;
@@ -122,38 +127,5 @@ hr {
         --bg_rgb: 2, 3, 16;
         --text: #BFEBFF;
         --text_rgb: 191, 235, 255;
-    }
-}
-
-@media (max-width: 916px) {
-    .prj_s {
-        justify-content: center;
-        gap: 30px;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-}
-
-@media (max-width: 768px) {
-    body {
-        padding-top: 70px;
-    }
-
-    .prj_s {
-        flex-direction: column;
-        gap: 30px;
-        align-items: center;
-    }
-}
-
-@media (max-width: 480px) {
-    body {
-        padding-top: 60px;
-    }
-
-    .prj_s {
-        flex-direction: column;
-        gap: 30px;
-        align-items: center;
     }
 }
