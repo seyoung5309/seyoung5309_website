@@ -21,11 +21,11 @@ function render(post) {
   box.innerHTML = `
     <div class="prj">
       <div class="main">
-        <p class="title">${post.title}</p>
+        <p id="name" class="title">${post.title}</p>
         <p class="ca">${post.category}</p>
       </div>
       <p class="date">${post.date}</p>
-      <img src="${post.img}" class="img">
+      <img src="${post.img}" class="img_sub">
       <p class="ex">${post.content}</p>
       <div class="sub">
         ${post.code}
@@ -33,6 +33,8 @@ function render(post) {
     </div>
     <hr>
   `;
+
+  document.title = "seyoung website / " + post.title;
 }
 
 loadProject();
