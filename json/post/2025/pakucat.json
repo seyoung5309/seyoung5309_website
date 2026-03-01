@@ -3,7 +3,7 @@
   "title": "PakuCat",
   "date": "2025.11.03 ~ 2025.11.28",
   "category": "Web",
-  "content": "",
+  "content": "HTML, CSS, JavaScript<br>팀 프로젝트 (Topper 4기 유닛 - 총 3명),<br>역할: 프론트엔드 - 개임 로직 및 스테이지 구현",
   "img": "../img/post/pakucat.png",
-  "code": ""
+  "code": "<h2 class='ex'>= 개요</h2><p class='ex'>프론트엔드 기반 2인 협동 웹 게임</p><h2 class='ex'>= 주요 기능</h2><ul class='ex'><li>키 입력을 받아 캐릭터 조작(wasd, 방향키)</li><li>총 6스테이지, 잠금된 스테이지는 보이지 않음</li><li>열쇠와 보물상자, 물과 돌멩이(장애물)와 같은 오브젝트 상호작용</li><li>localStorage 사용을 통한 사용자별 진행 상황 저장</li></ul><h2 class='ex'>= 실행 화면</h2><img class='img_sub' src='../img/post/pakucat_run.png'><h2 class='ex'>= 주요 코드</h2><img class='img_sub' src='../img/post/pakucat_code_1.png'><p class='ex'>localStorage를 활용한 스테이지 잠금 및 열람</p><img class='img_sub' src='../img/post/pakucat_code_2.png'><p class='ex'>웹 화면 렌더링을 위한 좌표값을 손수 지정... (스테이지 1의 코드 부분. 스테이지 중 가장 짧다.)</p>"
 }

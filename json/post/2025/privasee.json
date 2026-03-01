@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "title": "Privasee",
+  "date": "2025.08.12 ~ 2025.11.07",
+  "category": "Web",
+  "content": "Python, HTML, CSS, JavaScript, Gemini API<br>팀 프로젝트 (Topper 4기 S/W과 - 총 4명),<br>역할:<br>- 팀장: 기획서, 연구보고서 작성<br>- 풀스택(바이브 코딩): Gemini API 연동, 정규식 작성, 결과값 출력 함수",
+  "img": "../img/post/privasee.png",
+  "code": "<h2 class='ex'>= 개요</h2><p class='ex'>AI가 SNS 게시물을 분석하여 개인 정보 노출 점수를 메기고<br>위험 정도를 분석 및 피드백해주는 서비스 </p><h2 class='ex'>= 주요 기능</h2><ul class='ex'><li>Gemini API를 활용한 트랜스포머 AI 활용 및 결과값 반환</li><li>파일(이미지, 동영상) 혹은 텍스트 첨부를 통한 분석</li><li>정규식(개인 정보, 조합 정보)를 통한 점수 산정</li><li>위험 요소를 통한 AI 피드백</li></ul><h2 class='ex'>= 실행 화면</h2><img class='img_sub' src='../img/post/privasee_run.png'>"
+}

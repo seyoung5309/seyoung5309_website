@@ -5,5 +5,5 @@
   "category": "Web",
   "content": "JavaScript, Supabase<br>팀 프로젝트 (DA-LAB 1팀 - 총 7명)<br>역할: 백엔드 - 테이블 생성, 랭킹, 클로버, 회원 관리 db",
   "img": "../img/post/no777.png",
-  "code": "<p class='ex'>= 주요코드</p><img class='img_sub' src='../img/post/no777_code_1.png'><img class='img_sub' src='../img/post/no777_code_2.png'>"
+  "code": "<p class='ex'>= 개요<br>작은 공동체 안에서 칭찬과 격려를 시각화하여<br>구성원 간의 긍정적인 상호작용과 동기부여 촉진을 위한 프로젝트<p class='ex'>= 실행 화면</p><img class='img_sub' src='../img/post/no777_run.png'><p class='ex'>= 주요코드</p><img class='img_sub' src='../img/post/no777_code_1.png'><img class='img_sub' src='../img/post/no777_code_2.png'><br><a class='ex' href='https://da-lab-team1.vercel.app' target='_blank'>= No.777 바로가기 (클릭)</a>"
 }
