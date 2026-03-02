@@ -1,0 +1,9 @@
+{
+  "id": 9,
+  "title": "키보드 그림판",
+  "date": "2025.05.27",
+  "category": "JAVA",
+  "content": "Java<br>개인 프로젝트",
+  "img": "../img/post/keyboard_draw.png",
+  "code": "<h2 class='ex'>= 개요</h2><p class='ex'>마우스나 펜이 아닌 키보드를 통해<br>순서쌍을 입력 받아 그림이 그려진다면 어떨까? 라는 호기심에서 출발한 프로젝트</p><h2 class='ex'>= 주요 기능</h2><ul class='ex'><li>키보드 입력을 받아 좌표 순서쌍을 지정해 색칠</li><li>do while문과 if문을 활용한 색칠/지우기/종료</li><li>종료 시, 자신이 그린 그림을 다시 한 번 보여줌과 동시에 프로그램 종료</li></ul><h2 class='ex'>= 실행 화면</h2><img class='img_sub' src='../img/post/keyboard_draw_run.png'><br><f2 class='ex'>= 전체 코드</h2><br><img class='img_sub' src='../img/post/keyboard_draw_code.png'>"
+}
