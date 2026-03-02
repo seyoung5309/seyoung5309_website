@@ -13,12 +13,16 @@ hr {
     margin-top: 24px;
 }
 
+h2 {
+    font-size: clamp(16px, 2.5vw, 24px);
+}
+
 p {
     color: var(--text);
     font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
     font-style: normal;
     line-height: 1.6;
-    font-size: clamp(10px, 1.2vw, 14px);
+    font-size: clamp(12px, 2.5vw, 18px);
 }
 
 .prj {
@@ -64,13 +68,13 @@ p {
     margin: 24px 0;
     color: var(--text);
     font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
-    font-size: clamp(12px, 2.5vw, 18px);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
 .date {
+    font-size: clamp(10px, 1.2vw, 14px);
     margin-bottom: 24px;
 }
 
