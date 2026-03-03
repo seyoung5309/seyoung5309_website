@@ -1,9 +1,9 @@
 {
-  "id": 10,
+  "id": 11,
   "title": "도서 대출 프로그램",
   "date": "2025.04.29",
   "category": "C/C++",
   "content": "C언어<br>개인 프로젝트 / 14기 코딩 자율학습단 c언어 입문",
   "img": "../img/post/book_1.png",
-  "code": "<h2 class='ex'>= 개요</h2><p class='ex'>curses.h 라이브러리를 활용한 오목 게임</p><h2 class='ex'>= 주요 기능</h2><ul class='ex'><li>키보드로 두 명의 플레이어 닉네임을 입력</li><li>Unix / Linux 계열용 터미널 UI 라이브러리인 curses.h를 WSL을 활용해 사용</li><li>키보드 입력 혹은 마우스 클릭을 통해 자신의 돌 두기</li><li>win_check() 함수에 의해 승리로 판단된다면, 게임을 종료하고 이를 파일 입출력 처리</ul><h2 class='ex'>= 실행 화면</h2><img class='img_sub' src='../img/post/gomoku_run.png'><br><h2 class='ex'>= 전체 코드</h2><a class='ex' target='_blank' href='https://github.com/seyoung5309/C_Project/tree/main/Gomoku'>Github 레포지토리 바로가기 (클릭)</a><h2 class='ex'>= 관련 Velog 바로가기</h2><p class='ex'>(확장 전)</p><a class='ex' target='_blank' href='https://velog.io/@seyoung5309/C언어-15x15-오목-게임-만들기'>15x15 오목 게임 만들기 (클릭)</a><br><p class='ex'>(확장 후)</p><a class='ex' target='_blank' href='https://velog.io/@seyoung5309/C-리눅스-WSL-사용하는-법-VScode-세팅-C-컴파일'>WSL(Windows Subsystem for Linux) 사용하는 법 / VScode 세팅해 C 컴파일하기 (클릭)</a><br><a class='ex' target='_blank' href='https://velog.io/@seyoung5309/c언어-curses.h-터미널콘솔-기반의-텍스트-UI를-만들기-위한-C-라이브러리'>curses.h 터미널 콘솔 기반의 텍스트 UI를 만들기 위한 C 라이브러리 (클릭)</a>"
+  "code": "<h2 class='ex'>= 개요</h2><p class='ex'>14기 코딩 자율학습단의 내용 중 하나인 구조체를 활용한 도서 대출 프로그램</p><h2 class='ex'>= 주요 기능</h2><ul class='ex'><li>ID와 책 이름, 도서 대출 상황을 보여줌을 통해 유사 DB 구현</li><h2 class='ex'>= 실행 화면</h2><img class='img_sub' src='../img/post/book_1_run.png'><br><h2 class='ex'>= 전체 코드</h2><a class='ex' target='_blank' href='https://github.com/seyoung5309/C_Project/tree/main/Gomoku'>Github 레포지토리 바로가기 (클릭)</a>"
 }
