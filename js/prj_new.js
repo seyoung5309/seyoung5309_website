@@ -11,7 +11,7 @@ async function loadLatestProject() {
   const container = document.querySelector(".prj_main");
   container.innerHTML = `
     <div class="prj_card" onclick="goToProject(${project.id})">
-      <img src="${project.img}" alt="${project.title}" />
+      <img src="${project.img}" alt="${project.title}" style="width: 445px; height: 250.5px;" />
       <p class="text">${project.title}</p>
     </div>
   `;
